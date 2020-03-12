@@ -55,4 +55,9 @@
       {% endunless %}
     {% endif %}
   });
+
+---
+{% for item in site.brueghel %}{% if item.object_type == 'Painting' %}
+  {{item.label}} {% else %}{% endif %}{% endfor %}
+
 </script>
