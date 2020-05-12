@@ -20,7 +20,73 @@
         {%- endcapture -%}
       {% endif %}
     {% endif %}
-      <dt>{{ item.label }}</dt>
-      <dd>{{ value | strip }}</dd>
+	{% if page.label == ''}
+	  { % else %}
+        <dt>{{ item.label }}</dt>
+        <dd>{{ value | strip }}</dd>
+	{% endif %}
+	{% if page.object_type == ''}
+	  {% else %}
+        <dt>{{ item.label }}</dt>
+        <dd>{{ value | strip }}</dd>
+	{% endif %}
+	{% if page.genre == ''}
+	  { % else %}
+        <dt>{{ item.label }}</dt>
+        <dd>{{ value | strip }}</dd>
+	{% endif %}
+	{% if page.realdate == ''}
+	  { % else %}
+        <dt>{{ item.label }}</dt>
+        <dd>{{ value | strip }}</dd>
+	{% endif %}
+	{% if page.height_cm == ''}
+	  { % else %}
+        <dt>{{ item.label }}</dt>
+        <dd>{{ value | strip }}</dd>
+	{% endif %}
+	{% if page.width_cm == ''}
+	  { % else %}
+        <dt>{{ item.label }}</dt>
+        <dd>{{ value | strip }}</dd>
+	{% endif %}
+	{% if page.diameter_cm == ''}
+	  { % else %}
+        <dt>{{ item.label }}</dt>
+        <dd>{{ value | strip }}</dd>
+	{% endif %}
+	{% if page.plate_dimensions == ''}
+	  { % else %}
+        <dt>{{ item.label }}</dt>
+        <dd>{{ value | strip }}</dd>
+	{% endif %}
+	{% if page.support == ''}
+	  { % else %}
+        <dt>{{ item.label }}</dt>
+        <dd>{{ value | strip }}</dd>
+	{% endif %}
+	{% if page.drawing_medium == ''}
+	  { % else %}
+        <dt>{{ item.label }}</dt>
+        <dd>{{ value | strip }}</dd>
+	{% endif %}
+	{% if page.signature == ''}
+	  { % else %}
+        <dt>{{ item.label }}</dt>
+        <dd>{{ value | strip }}</dd>
+	{% endif %}
+	{% if page.signature_location == ''}
+	  { % else %}
+        <dt>{{ item.label }}</dt>
+        <dd>{{ value | strip }}</dd>
+	{% endif %}
+	{% if page.support_marks == ''}
+	  { % else %}
+        <dt>{{ item.label }}</dt>
+        <dd>{{ value | strip }}</dd>
+	{% endif %}
+	      
+	
   {% endfor %}
+  
 </dl>
