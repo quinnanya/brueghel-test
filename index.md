@@ -3,7 +3,7 @@ layout: page
 show_title: false
 banner:
   collection: brueghel
-  pid: 3863
+  pid: p18515
   y: 25%
   height: '500px'
 ---
